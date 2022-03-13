@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Report v2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+
+    <!---Carbon Design Web Components-->
+    <script type="module">
+      import 'https://jspm.dev/carbon-web-components/es/components/dropdown/dropdown.js';
+      import 'https://jspm.dev/carbon-web-components/es/components/dropdown/dropdown-item.js';
+    </script>
+    <style type="text/css">
+      #app {
+        font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+        width: 300px;
+        margin: 2rem;
+      }
+
+      bx-dropdown:not(:defined),
+      bx-dropdown-item:not(:defined) {
+        visibility: hidden;
+      }
+      bx-header ~ bx-side-nav {
+        margin-top: 3rem;
+        height: calc(100% - 3rem);
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <div id="app">
+      <bx-header  role="banner">
+        <bx-header-name>
+          Report V4
+        </bx-header-name>
+        <bx-header-nav>
+        </bx-header-nav>
+      </bx-header>
+      <bx-dropdown trigger-content="Select an item">
+        <bx-dropdown-item value="all">Option 1</bx-dropdown-item>
+        <bx-dropdown-item value="cloudFoundry">Option 2</bx-dropdown-item>
+        <bx-dropdown-item value="staging">Option 3</bx-dropdown-item>
+        <bx-dropdown-item value="dea">Option 4</bx-dropdown-item>
+        <bx-dropdown-item value="router">Option 5</bx-dropdown-item>
+      </bx-dropdown>
+    </div>
+    <script src="" async defer></script>
+  </body>
+</html>
+
